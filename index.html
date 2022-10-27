@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <main class="main">
+        <h1 class="main__title">Currency converter</h1>
+        <div class="input__block">
+            <input class="input__block input" type="text" placeholder="Enter amount of hryvnias...">
+            <select name="currency_list" class="input__block currency">
+                <option value="USD">Американський долар</option>
+                <option value="EUR" selected>Євро</option>
+                <option value="PLN">Польські злоти</option>
+                <option value="CAD">Канадський долар</option>
+                <option value="HKD">Гонконгкський долар</option>
+                <option value="RUB" disabled>Кацапський дерев'яний</option>
+            </select>
+        </div>
+        <div class="result__block">
+            <output class="result__block result">Result here...</output>
+        </div>
+    </main>
+    <script src="./source/js/script.js"></script>
+</body>
+
+</html>

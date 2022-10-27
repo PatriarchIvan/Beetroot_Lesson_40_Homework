@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Urbanist:500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(13, 0, 153)), to(rgb(240, 251, 40)));
+  background: -o-linear-gradient(top, rgb(13, 0, 153), rgb(240, 251, 40));
+  background: linear-gradient(180deg, rgb(13, 0, 153), rgb(240, 251, 40));
+  font-family: "Urbanist";
+  font-style: italic;
+  font-size: 50px;
+}
+
+.main {
+  height: 100vh;
+}
+.main__title {
+  text-align: center;
+}
+.main .input__block {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Urbanist";
+  font-style: italic;
+}
+.main .input__block .input, .main .input__block .currency {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+}
+.main .input__block .input::-webkit-input-placeholder, .main .input__block .currency::-webkit-input-placeholder {
+  font-size: 25px;
+}
+.main .input__block .input::-moz-placeholder, .main .input__block .currency::-moz-placeholder {
+  font-size: 25px;
+}
+.main .input__block .input:-ms-input-placeholder, .main .input__block .currency:-ms-input-placeholder {
+  font-size: 25px;
+}
+.main .input__block .input::-ms-input-placeholder, .main .input__block .currency::-ms-input-placeholder {
+  font-size: 25px;
+}
+.main .input__block .input::placeholder, .main .input__block .currency::placeholder {
+  font-size: 25px;
+}
+.main .input__block .currency {
+  height: 64px;
+}
+.main .input__block .currency:hover {
+  cursor: pointer;
+}
+.main .input__block .currency option:disabled {
+  background: rgb(117, 6, 6);
+  text-decoration: line-through;
+  color: #fff;
+}
+.main .result__block {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(0, 23, 97);
+  font-size: 80px;
+}

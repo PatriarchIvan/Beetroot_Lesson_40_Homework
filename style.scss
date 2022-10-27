@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Urbanist:500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgb(13, 0, 153), rgb(240, 251, 40));
+    font-family: "Urbanist";
+    font-style: italic;
+    font-size: 50px;
+}
+
+.main {
+    height: 100vh;
+
+    &__title {
+        text-align: center;
+    }
+
+    & .input__block {
+        margin-top: 20px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        font-family: "Urbanist";
+        font-style: italic;
+
+        & .input,
+        & .currency {
+            width: 400px;
+            height: 50px;
+            text-align: center;
+            font-size: 35px;
+            padding: 5px;
+
+            &::placeholder {
+                font-size: 25px;
+            }
+        }
+
+        & .currency {
+            height: 64px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            & option:disabled {
+                background: rgb(117, 6, 6);
+                text-decoration: line-through;
+                color: #fff
+            }
+        }
+    }
+    & .result__block {
+        text-align: center;
+        margin-top: 50px;
+        color: rgb(0, 23, 97);
+        font-size: 80px;
+    }
+}
