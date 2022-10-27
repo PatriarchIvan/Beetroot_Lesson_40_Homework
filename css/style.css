@@ -5,15 +5,18 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(13, 0, 153)), to(rgb(240, 251, 40)));
   background: -o-linear-gradient(top, rgb(13, 0, 153), rgb(240, 251, 40));
   background: linear-gradient(180deg, rgb(13, 0, 153), rgb(240, 251, 40));
+  background-repeat: no-repeat;
   font-family: "Urbanist";
   font-style: italic;
   font-size: 50px;
-}
-
-.main {
   height: 100vh;
 }
+
 .main__title {
+  text-align: center;
+}
+.main__time {
+  white-space: pre;
   text-align: center;
 }
 .main .input__block {
