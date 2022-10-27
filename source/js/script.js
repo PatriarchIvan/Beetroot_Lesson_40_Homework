@@ -21,10 +21,9 @@ function sendReq() {
         .catch(error => console.log(error));
 }
 
-function setTime () {
+function setTime() {
     setTimeout(setTime, 1000);
-    time.textContent = `${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}\n${new Date()
-        .getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+    time.textContent = `${new Date().getDate()}.${new Date().getMonth()+1}.${new Date().getFullYear()}\n${(new Date().getHours()<10?'0':'') + new Date().getHours()}:${(new Date().getMinutes()<10?'0':'') + new Date().getMinutes()}:${(new Date().getSeconds()<10?'0':'') + new Date().getSeconds()}`;
 }
 
 setTime();
@@ -35,5 +34,5 @@ input.addEventListener('input', () => {
         result.textContent = 'Enter correct value';
     } else {
         sendReq();
-    } 
+    }
 });
